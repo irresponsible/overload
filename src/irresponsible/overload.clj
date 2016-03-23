@@ -69,7 +69,7 @@
    args: [sym]
    returns: [t v] or nil
      t: the type, a keyword. one of :array :primitive :class :var
-     v: in case of array, another vector of the same type
+     v: in case of array, another [t v] vector
         in case of other, the class, primitive or var named"
   [sym]
   (when-let [[t v :as all] (-> sym str about)]

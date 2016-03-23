@@ -1,7 +1,10 @@
+The irresponsible clojure guild present...
+
 # overload
 
 A simple library that deals with dynamic loading of classes and vars
 
+[![Clojars Project](https://img.shields.io/clojars/v/irresponsible/overload.svg)](https://clojars.org/irresponsible/overload)
 ## Usage
 
 ```clojure
@@ -23,6 +26,8 @@ Clojurescript support would be nice but requires careful consideration.
 ## Contributions
 
 Pull requests and issues welcome, even if it's just doc fixes. We don't bite.
+
+Tests are run with `boot test` or `boot autotest` (reruns on file changes)
 
 ## License
 
