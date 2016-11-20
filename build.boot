@@ -48,3 +48,11 @@
 
 (deftask release []
   (comp (pom) (jar) (push)))
+
+;; Travis Only stuff
+(deftask travis []
+  (testing)
+  (t/test))
+
+(deftask travis-installdeps []
+  (testing) identity)
