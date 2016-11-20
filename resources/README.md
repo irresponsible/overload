@@ -22,6 +22,8 @@ A simple library that deals with dynamic loading of classes and vars
 (overload 'java.lang.Object<>)  ;; => [:array [:class java.lang.Object]]
 ```
 
+For a full manual, consult [resources/manual/irresponsible.overload.mkdn](resources/manual/irresponsible.overload.mkdn)
+
 ## Plans
 
 Clojurescript support would be nice but requires careful consideration.
