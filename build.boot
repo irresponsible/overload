@@ -6,6 +6,7 @@
   :description "Dynamic loading and lookup"
   :url "https://github.com/irresponsible/overload/"
   :scm {:url "https://github.com/irresponsible/overload"}
+  :developers {"James Laver" "james@seriesofpipes.com"}
   :license {"MIT" "https://en.wikipedia.org/MIT_License"}
   :dependencies '[[org.clojure/clojure      "1.8.0"  :scope "provided"]
                   [adzerk/boot-test         "1.1.0"  :scope "test"]
