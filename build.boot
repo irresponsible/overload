@@ -1,6 +1,6 @@
 (set-env!
   :project 'irresponsible/overload
-  :version "0.1.0"
+  :version "0.1.1"
   :resource-paths #{"src"}
   :source-paths #{"src"}
   :description "Dynamic loading and lookup"
