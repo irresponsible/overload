@@ -42,5 +42,9 @@
 (deftask autotest []
   (comp (watch) (test)))
 
-(deftask make-release-jar []
-  (comp (target) (pom) (jar)))
+;; RMG Only stuff
+(deftask make-jar []
+  (comp (pom) (jar) (target)))
+
+(deftask release []
+  (comp (pom) (jar) (push)))
