@@ -12,7 +12,7 @@
                   [adzerk/boot-test         "1.1.2"  :scope "test"]
                   [org.clojure/tools.nrepl  "0.2.12" :scope "test"]])
 
-(require '[adzerk.boot-test :as boot-test])
+(require '[adzerk.boot-test :as t])
 
 (task-options!
   pom {:url         (get-env :url)
@@ -32,11 +32,12 @@
   target  {:dir #{"target"}})
 
 (deftask testing []
+  (set-env! :resource-paths #(conj % "test"))
   (set-env! :source-paths #(conj % "test")))
   
 (deftask test []
   (testing)
-  (comp (target) (speak) (javac) (boot-test/test)))
+  (t/test))
 
 (deftask autotest []
   (comp (watch) (test)))
