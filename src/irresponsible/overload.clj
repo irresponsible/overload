@@ -73,11 +73,8 @@
         in case of other, the class, primitive or var named"
   [sym]
   (when-let [[t v :as all] (-> sym str about)]
-    (letfn [(overload' [sym]
-              (try (resolve sym)
-                   (catch Exception e nil)))
-            (symbol' [sym]
-              (when-let [r (overload' sym)]
+    (letfn [(symbol' [sym]
+              (when-let [r (try (resolve sym))]
                   (cond (var? r)   [:var r]
                         (class? r) [:class r]
                         :otherwise nil)))]
