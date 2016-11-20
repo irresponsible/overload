@@ -5,6 +5,9 @@ The irresponsible clojure guild present...
 A simple library that deals with dynamic loading of classes and vars
 
 [![Clojars Project](https://img.shields.io/clojars/v/irresponsible/overload.svg)](https://clojars.org/irresponsible/overload)
+
+[![Travis CI](https://travis-ci.org/irresponsible/overload.svg?branch=master)](https://travis-ci.org/irresponsible/overload)
+
 ## Usage
 
 ```clojure
