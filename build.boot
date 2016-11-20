@@ -1,7 +1,7 @@
 (set-env!
   :project 'irresponsible/overload
   :version "0.1.1"
-  :resource-paths #{"src"}
+  :resource-paths #{"src" "resources"}
   :source-paths #{"src"}
   :description "Dynamic loading and lookup"
   :url "https://github.com/irresponsible/overload/"
