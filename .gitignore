@@ -1,5 +1,5 @@
 .#*
 *~
-/.nrepl-*
+.nrepl-*
 /target
 pom.xml
