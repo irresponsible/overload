@@ -10,7 +10,7 @@
   :developers {"James Laver" "james@seriesofpipes.com"}
   :license {"MIT" "https://en.wikipedia.org/MIT_License"}
   :dependencies '[[org.clojure/clojure      "1.9.0-alpha15"  :scope "provided"]
-                  [adzerk/boot-test         "1.1.2"  :scope "test"]
+                  [adzerk/boot-test         "1.2.0"  :scope "test"]
                   [org.clojure/tools.nrepl  "0.2.12" :scope "test"]])
 
 (require '[adzerk.boot-test :as t])
