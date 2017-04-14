@@ -1,3 +1,4 @@
+; vim: syntax=clojure
 (set-env!
   :project 'irresponsible/overload
   :version "0.1.2"
@@ -8,7 +9,7 @@
   :scm {:url "https://github.com/irresponsible/overload"}
   :developers {"James Laver" "james@seriesofpipes.com"}
   :license {"MIT" "https://en.wikipedia.org/MIT_License"}
-  :dependencies '[[org.clojure/clojure      "1.8.0"  :scope "provided"]
+  :dependencies '[[org.clojure/clojure      "1.9.0-alpha15"  :scope "provided"]
                   [adzerk/boot-test         "1.1.2"  :scope "test"]
                   [org.clojure/tools.nrepl  "0.2.12" :scope "test"]])
 
