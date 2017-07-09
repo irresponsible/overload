@@ -8,6 +8,7 @@
 (about "foo<>")
 (array-subtype "foo<>")
 (overload 'byte)
+(overload-sym 'byte)
 (primitive-array-subtype "bytes")
 (primitive? "double")
 (valid-class? "ClassName.Goes.Here")
@@ -87,6 +88,8 @@ Returns format:
 (is (= [:symbol "java.lang.Object"]  (about "java.lang.Object")))
 (is (nil?                            (about "1`nv@L1d")))
 ```
+
+### overload-sym
 
 ### overload
 

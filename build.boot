@@ -1,7 +1,7 @@
 ; vim: syntax=clojure
 (set-env!
   :project 'irresponsible/overload
-  :version "0.1.2"
+  :version "0.2.0"
   :resource-paths #{"src" "resources"}
   :source-paths #{"src"}
   :description "Dynamic loading and lookup"

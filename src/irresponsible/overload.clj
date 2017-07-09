@@ -149,6 +149,13 @@
             [:array r])
           (scalar name))))))
 
+;; ### overload-sym
+;;
+;;; (overload-sym 'byte)
+(defn overload-sym [sym]
+  (try (resolve sym)
+       (catch Exception e nil)))
+
 ;; ### overload
 ;;
 ;; Resolves the given symbol/string and returns a data structure
@@ -177,7 +184,7 @@
   [sym]
   (when-let [[t v :as all] (-> sym str about)]
     (letfn [(symbol' [sym]
-              (when-let [r (try (resolve sym))]
+              (when-let [r (overload-sym sym)]
                   (cond (var? r)   [:var r]
                         (class? r) [:class r]
                         :otherwise nil)))]
